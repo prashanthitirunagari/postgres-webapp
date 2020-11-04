@@ -6,8 +6,8 @@ from sqlalchemy.sql import func
 #from app import db
 
 app=Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI']="postgresql://postgres:postgres@localhost/learning"
-#app.config['SQLALCHEMY_DATABASE_URI']='postgres://quqvsrexcqvnsx:db954000112f2629d6de2a1c7ef7501482136c73e8bc7720919285413e0f4a5c@ec2-3-218-75-21.compute-1.amazonaws.com:5432/db13lrdmnvpm3vdb?sslmode-require'
+#app.config['SQLALCHEMY_DATABASE_URI']="postgresql://postgres:postgres@localhost/learning"
+app.config['SQLALCHEMY_DATABASE_URI']='postgres://clhjbymehuzdkj:b8c0e6746f2b341d8d0f637c9360fd8bb01cd944d169d651f9c09f0aa0bd71d0@ec2-52-21-247-176.compute-1.amazonaws.com:5432/dft5lqin1lhsav?sslmode-require'
 db=SQLAlchemy(app)
 
 class Data(db.Model):
